@@ -1,0 +1,34 @@
+{
+  "name": "vscode-test-runner-configs",
+  "version": "0.0.1",
+  "description": "Examples of VS Code launch configs for running tests",
+  "scripts": {
+    "test": "npm run teenytest && npm run mocha",
+    "teenytest": "teenytest js/teenytest/**/*.js",
+    "mocha": "mocha js/mocha",
+    "style": "standard --fix js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/testdouble/vscode-test-runner-configs.git"
+  },
+  "author": "Justin Searls <searls@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/testdouble/vscode-test-runner-configs/issues"
+  },
+  "homepage": "https://github.com/testdouble/vscode-test-runner-configs#readme",
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "mocha-line": "^0.0.1",
+    "ought": "^0.0.6",
+    "standard": "^17.0.0",
+    "teenytest": "^6.0.5"
+  },
+  "standard": {
+    "global": [
+      "describe",
+      "it"
+    ]
+  }
+}
