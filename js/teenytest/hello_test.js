@@ -1,11 +1,11 @@
 const ought = require('ought')
 
 module.exports = {
-  hello: function () {
-    ought.equal('hello', 'hello')
+  'hello there' () {
+    ought.equal('world', 'world')
   },
 
-  world: function () {
+  world () {
     ought.equal('world', 'world')
   },
 

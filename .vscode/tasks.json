@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "run_mocha_single_test",
+      "command": "${workspaceFolder}/node_modules/.bin/mocha ${relativeFile} --grep \"$(${workspaceFolder}/node_modules/.bin/mocha-line ${relativeFile}:${lineNumber})\"",
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "showReuseMessage": false,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "clear": true
+      }
+    }
+  ]
+}
